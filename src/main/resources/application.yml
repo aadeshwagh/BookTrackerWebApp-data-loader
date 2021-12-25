@@ -1,0 +1,27 @@
+spring:
+  main:
+    allow-circular-references: true
+  data:
+    cassandra:
+      keyspace-name: main
+      username: <>
+      password: <>
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datadump.location:
+  author: C:\Users\Asus\OneDrive\Documents\author.txt
+  works: C:\Users\Asus\OneDrive\Documents\works.txt
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: <>
+  region: Asia Pacific
+  keyspace: main
+  application.token: <>
